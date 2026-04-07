@@ -1,0 +1,94 @@
+schema_version: "1.0"
+
+preset:
+  id: "arctic-factory"
+  name: "Arctic Factory"
+  version: "1.0.0"
+  description: "Bộ skill và template speckit tiếng Việt dành cho quy trình phát triển tính năng chuẩn hoá bởi Arctic Factory."
+  author: "Nam Ho"
+  repository: "https://github.com/namht/arctic-factory-preset"
+  license: "MIT"
+
+# Yêu cầu phiên bản spec-kit
+requires:
+  speckit_version: ">=0.1.0"
+
+# Các tài nguyên do preset này cung cấp
+provides:
+  templates:
+    # Template đặc tả tính năng (thay thế core)
+    - type: "template"
+      name: "spec-template"
+      file: "templates/spec-template.md"
+      description: "Template đặc tả tính năng tùy chỉnh"
+      replaces: "spec-template"
+
+  skills:
+    # Tạo mới hoặc cập nhật đặc tả tính năng
+    - type: "skill"
+      name: "speckit-specify"
+      file: "skills/speckit-specify/SKILL.md"
+      description: "Tạo mới hoặc cập nhật đặc tả tính năng từ một mô tả tính năng bằng ngôn ngữ tự nhiên."
+      replaces: "speckit-specify"
+
+    # Làm rõ đặc tả
+    - type: "skill"
+      name: "speckit-clarify"
+      file: "skills/speckit-clarify/SKILL.md"
+      description: "Xác định các phần chưa rõ ràng trong đặc tả tính năng bằng cách đặt tối đa 5 câu hỏi tập trung để làm rõ và cập nhật các câu trả lời vào spec."
+      replaces: "speckit-clarify"
+
+    # Lập kế hoạch triển khai
+    - type: "skill"
+      name: "speckit-plan"
+      file: "skills/speckit-plan/SKILL.md"
+      description: "Thực thi quy trình lập kế hoạch triển khai, sử dụng template kế hoạch để tạo ra các tài liệu thiết kế."
+      replaces: "speckit-plan"
+
+    # Tạo tasks
+    - type: "skill"
+      name: "speckit-tasks"
+      file: "skills/speckit-tasks/SKILL.md"
+      description: "Tạo tasks.md có thể thực thi, được sắp xếp theo trình tự phụ thuộc cho tính năng dựa trên các tài liệu thiết kế hiện có."
+      replaces: "speckit-tasks"
+
+    # Thực thi tasks
+    - type: "skill"
+      name: "speckit-implement"
+      file: "skills/speckit-implement/SKILL.md"
+      description: "Thực thi kế hoạch triển khai bằng cách xử lý và thực hiện toàn bộ các task được định nghĩa trong tasks.md"
+      replaces: "speckit-implement"
+
+    # Phân tích chất lượng
+    - type: "skill"
+      name: "speckit-analyze"
+      file: "skills/speckit-analyze/SKILL.md"
+      description: "Thực hiện phân tích chất lượng và tính nhất quán chéo trên spec.md, plan.md và tasks.md (không làm thay đổi dữ liệu) sau khi tạo task."
+      replaces: "speckit-analyze"
+
+    # Tạo checklist
+    - type: "skill"
+      name: "speckit-checklist"
+      file: "skills/speckit-checklist/SKILL.md"
+      description: "Tạo một checklist tùy chỉnh cho tính năng hiện tại dựa trên các yêu cầu của người dùng."
+      replaces: "speckit-checklist"
+
+    # Tạo/cập nhật hiến pháp dự án
+    - type: "skill"
+      name: "speckit-constitution"
+      file: "skills/speckit-constitution/SKILL.md"
+      description: "Tạo mới hoặc cập nhật hiến pháp dự án (constitution) thông qua người dùng tương tác hoặc các nguyên tắc đầu vào, đảm bảo mọi template phụ thuộc luôn được đồng bộ."
+      replaces: "speckit-constitution"
+
+    # Chuyển tasks thành GitHub Issues
+    - type: "skill"
+      name: "speckit-taskstoissues"
+      file: "skills/speckit-taskstoissues/SKILL.md"
+      description: "Chuyển đổi các task hiện tại thành các GitHub issue có thể thực thi và được sắp xếp theo trình tự phụ thuộc dựa trên các tài liệu thiết kế."
+      replaces: "speckit-taskstoissues"
+
+tags:
+  - "vietnamese"
+  - "arctic-factory"
+  - "speckit"
+  - "workflow"
