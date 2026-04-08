@@ -38,7 +38,7 @@ specify preset add --dev ./arctic-factory
 
 ```bash
 # Cài local để test
-specify preset add --dev ./arctic-factory
+specify preset add --dev https://github.com/nShieldSolo/ArcticFactory.Preset.git
 
 # Kiểm tra độ phân giải template
 specify preset resolve spec-template
