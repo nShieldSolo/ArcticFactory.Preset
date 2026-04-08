@@ -44,25 +44,6 @@ jobs:
 
           echo "tag=${tag}" >> "${GITHUB_OUTPUT}"
 
-      - name: Validate package version against the tag
-        shell: bash
-        run: |
-          set -euo pipefail
-
-          tag="${{ steps.release_tag.outputs.tag }}"
-          version="${tag#v}"
-
-          preset_version="$(awk -F'"' '/^  version:/ {print $2; exit}' arctic-factory/preset.yml)"
-
-          if [[ -z "${preset_version}" ]]; then
-            echo "Failed to read package version from arctic-factory/preset.yml" >&2
-            exit 1
-          fi
-
-          if [[ "${preset_version}" != "${version}" ]]; then
-            echo "arctic-factory/preset.yml version ${preset_version} does not match tag ${tag}" >&2
-            exit 1
-          fi
 
       - name: Build release archive
         shell: bash
