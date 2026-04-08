@@ -3,7 +3,7 @@ schema_version: "1.0"
 preset:
   id: "arctic-factory"
   name: "Arctic Factory"
-  version: "0.0.3"
+  version: "0.0.4"
   description: "Bộ skill và template speckit tiếng Việt dành cho quy trình phát triển tính năng chuẩn hoá bởi Arctic Factory."
   author: "Nam Ho"
   repository: "https://github.com/namht/arctic-factory-preset"
