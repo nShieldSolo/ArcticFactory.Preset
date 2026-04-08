@@ -1,12 +1,6 @@
 ---
-name: "speckit-plan"
 description: "Thực thi quy trình lập kế hoạch triển khai, sử dụng template kế hoạch để tạo ra các tài liệu thiết kế."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/plan.md"
 ---
-
 
 ## User Input
 

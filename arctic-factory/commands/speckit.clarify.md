@@ -1,12 +1,6 @@
 ---
-name: "speckit-clarify"
 description: "Xác định các phần chưa rõ ràng trong đặc tả tính năng bằng cách đặt tối đa 5 câu hỏi tập trung để làm rõ và cập nhật các câu trả lời vào spec."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/clarify.md"
 ---
-
 
 ## User Input
 

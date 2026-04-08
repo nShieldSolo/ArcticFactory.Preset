@@ -1,12 +1,6 @@
 ---
-name: "speckit-taskstoissues"
 description: "Chuyển đổi các task hiện tại thành các GitHub issue có thể thực thi và được sắp xếp theo trình tự phụ thuộc dựa trên các tài liệu thiết kế."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/taskstoissues.md"
 ---
-
 
 ## User Input
 

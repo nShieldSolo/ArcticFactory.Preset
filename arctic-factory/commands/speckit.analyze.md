@@ -1,12 +1,6 @@
 ---
-name: "speckit-analyze"
 description: "Thực hiện phân tích chất lượng và tính nhất quán chéo trên spec.md, plan.md và tasks.md (không làm thay đổi dữ liệu) sau khi tạo task."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/analyze.md"
 ---
-
 
 ## User Input
 

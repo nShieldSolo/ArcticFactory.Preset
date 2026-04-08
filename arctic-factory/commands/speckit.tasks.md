@@ -1,12 +1,6 @@
 ---
-name: "speckit-tasks"
 description: "Tạo tasks.md có thể thực thi, được sắp xếp theo trình tự phụ thuộc cho tính năng dựa trên các tài liệu thiết kế hiện có."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/tasks.md"
 ---
-
 
 ## User Input
 

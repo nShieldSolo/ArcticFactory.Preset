@@ -1,12 +1,6 @@
 ---
-name: "speckit-constitution"
 description: "Tạo mới hoặc cập nhật hiến pháp dự án (constitution) thông qua người dùng tương tác hoặc các nguyên tắc đầu vào, đảm bảo mọi template phụ thuộc luôn được đồng bộ."
-compatibility: "Requires spec-kit project structure with .specify/ directory"
-metadata:
-  author: "github-spec-kit"
-  source: "templates/commands/constitution.md"
 ---
-
 
 ## User Input
 
