@@ -2,14 +2,41 @@
 
 Bộ skill và template **speckit** tiếng Việt, chuẩn hoá quy trình phát triển tính năng cho các dự án sử dụng [Spec Kit](https://github.com/github-spec-kit/spec-kit).
 
+## Yêu cầu
+
+- [Spec Kit (Specify CLI)](https://github.com/github/spec-kit) đã được cài đặt
+
 ## Cài đặt
 
-```bash
-# Cài từ GitHub
-specify preset add https://github.com/nShieldSolo/ArcticFactory.Preset.git
+### Cài từ GitHub Release (khuyên dùng)
 
-# Hoặc cài local khi phát triển
-specify preset add --dev ./arctic-factory
+```bash
+specify preset add --from https://github.com/nShieldSolo/ArcticFactory.Preset/releases/latest/download/arctic-factory-preset-v0.0.3.zip
+```
+
+### Cài từ repository GitHub
+
+```bash
+specify preset add --from https://github.com/nShieldSolo/ArcticFactory.Preset.git
+```
+
+### Xác nhận cài đặt thành công
+
+```bash
+# Kiểm tra preset đã được đăng ký
+specify preset list
+
+# Kiểm tra template phân giải đúng
+specify preset resolve spec-template
+
+# Kiểm tra skill phân giải đúng
+specify preset resolve speckit-specify
+```
+
+### Gỡ cài đặt
+
+```bash
+specify preset remove arctic-factory
 ```
 
 ## Nội dung Preset
@@ -37,8 +64,8 @@ specify preset add --dev ./arctic-factory
 ## Phát triển & Test
 
 ```bash
-# Cài local để test
-specify preset add --dev https://github.com/nShieldSolo/ArcticFactory.Preset.git
+# Cài local để test (trỏ thẳng vào thư mục preset)
+specify preset add --dev ./arctic-factory
 
 # Kiểm tra độ phân giải template
 specify preset resolve spec-template
