@@ -6,7 +6,7 @@ Bộ skill và template **speckit** tiếng Việt, chuẩn hoá quy trình phá
 
 ```bash
 # Cài từ GitHub
-specify preset add namht/arctic-factory-preset
+specify preset add https://github.com/nShieldSolo/ArcticFactory.Preset.git
 
 # Hoặc cài local khi phát triển
 specify preset add --dev ./arctic-factory
